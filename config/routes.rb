@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :offers
+  devise_for :users
   root 'home#index'
 
   get 'home/about'
